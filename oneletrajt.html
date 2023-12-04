@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Önéletrajz!</title>
+    <script defer src='oneletrajz.js'></script>
+  </head>
+  <body>
+    <h1>Önéletrajz készítő!</h1>
+    <div class="container">
+    <form>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name" name="name">
+            <label for="name">Neved:</label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sex" id="sex1"  checked>
+            <label class="form-check-label" for="sex1">
+              Nő
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="sex" id="sex2">
+            <label class="form-check-label" for="sex2">
+              Férfi
+            </label>
+          </div>
+
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="age" name="age">
+            <label for="age">Korod:</label>
+        </div>
+
+        <div class="form-floating">
+        <select class="form-select" name="job" id="job">
+            <option value="1">Pilóta</option>
+            <option value="2">Cipész</option>
+            <option value="3">Programozó</option>
+            <option value="3">Vízszerelő</option>
+        </select>
+        <label for="job">Foglalkozásod</label>
+    </div>
+    <div class="row">
+        
+        <div class="col-10" class="mb-3">
+            <label for="experience" class="form-label">Szakmai tapasztalatod:</label>
+            <input name="experience" type="range" value="0" class="form-range" min="0" max="30" step="0.5" id="experience">
+        </div>
+        <div class="col-2 mt-4" id="ertek">0 év</div>
+    </div>  
+    <div>Hobbid</div>
+    <div class="form-check">
+        <input name="hobbi" class="form-check-input" type="checkbox" value="" id="kirandulas">
+        <label class="form-check-label" for="kirandulas">
+          Kirándulás
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="hobbi" class="form-check-input" type="checkbox" value="" id="alvas">
+        <label class="form-check-label" for="alvas">
+          Alvás
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="hobbi" class="form-check-input" type="checkbox" value="" id="varras">
+        <label class="form-check-label" for="varras">
+          Varrás
+        </label>
+      
+    </div>
+        <button type="submit" class="btn btn-primary">Elküld</button>
+    </form>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
